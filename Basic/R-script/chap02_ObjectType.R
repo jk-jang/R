@@ -336,29 +336,6 @@ y1; class(y1)
 xy <- subset(xy.df, x>=8 & y <= 12)
 xy
 
-
-# 7. Data Frame Join -> 병합(merge)
-
-height <- data.frame(id=c(1,2,3), h=c(160,165,175))
-weight <- data.frame(id=c(1,2,3), w=c(56,85,66))
-height; weight
-
-person <- merge(height, weight, by.x = 'id', by.y = 'id')
-person
-
-#<연습문제4> kor(국어 점수 2개)과 eng(영어 점수 2개)를 id로 merge해서 
-# score에 할당하시오.
-# <score 결과>
-#  id kor eng
-#1  1  85  95
-#2  2  75  86
-
-k <- data.frame(id=c(1,2), kor=c(85,75))
-e <- data.frame(id=c(1,2), eng=c(95,86))
-score <- merge(k, e, by.x='id', by.y='id')
-score
-
-
 # 8. 문자열 처리와 정규표현식 
 # - stringr 패키지 이용 
 install.packages('stringr')
