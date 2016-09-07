@@ -5,6 +5,25 @@
 install.packages('plyr')
 library(plyr) # 패키지 로딩
 
+height <- data.frame(id=c(1,2,3), h=c(160,165,175))
+weight <- data.frame(id=c(1,2,3), w=c(56,85,66))
+height; weight
+
+person <- merge(height, weight, by.x = 'id', by.y = 'id')
+person
+
+#<연습문제4> kor(국어 점수 2개)과 eng(영어 점수 2개)를 id로 merge해서 
+# score에 할당하시오.
+# <score 결과>
+#  id kor eng
+#1  1  85  95
+#2  2  75  86
+
+k <- data.frame(id=c(1,2), kor=c(85,75))
+e <- data.frame(id=c(1,2), eng=c(95,86))
+score <- merge(k, e, by.x='id', by.y='id')
+score
+
 # 병합할 데이터프레임 셋 만들기
 x = data.frame(ID = c(1,2,3,4,5), height = c(160,171,173,162,165)) #5번 아이디가 없음
 y = data.frame(ID = c(5,4,1,3,2), weight = c(55,73,60,57,80)) #6번 아이디가 없음
