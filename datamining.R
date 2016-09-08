@@ -226,7 +226,6 @@ anova(lm1,lm2)#RSS비교.귀무가설:두 모형이 통계적으로 다르다.->
 
 ########Classification 
 #input->classifier->output
-#Decision Boundary: X와 O로 이루어진 특정공간에서 X와 O를 가르는 선
 
 #(1)Logistic Regression(Decision Boundary가 linear인 경우)
 #(2)LDA/QDA
