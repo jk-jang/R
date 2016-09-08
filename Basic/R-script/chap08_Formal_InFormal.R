@@ -76,7 +76,10 @@ conn <- dbConnect(drv, "jdbc:mysql://127.0.0.1:3306/work", "scott", "tiger")
 #자바 메모리 사양 부족->heap size를 늘려주면 됨
 options( java.parameters = "-Xmx8g" ) #8기가
 
-
+###############GC error##############
+#java.lang.OutOfMemoryError: GC overhead limit exceeded
+#var1="jang"; var2="han"; var2=var1 일 때, var2가 var1으로 정의됨. var2="han"은 필요없는 정의, 이런걸 garbage라 함
+gc();gc() #used (MB)가 줄어듬을 볼 수 있음
 
 # select문 작성과 실행
 query = "SELECT * FROM student"
