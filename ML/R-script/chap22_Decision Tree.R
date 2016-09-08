@@ -2,8 +2,6 @@
 ########### Decision Tree: 분류모형 ########
 ############################################
 
-install.packages('rpart.plot')
-
 library(rpart) # rpart() : 분류모델 생성 
 library(rpart.plot) # prp() : rpart 시각화 패키지 
 
@@ -14,18 +12,16 @@ idx = sample(1:nrow(iris), 0.7*nrow(iris))
 train = iris[idx, ]
 test = iris[-idx, ]
 dim(train) # 105 5
-dim(test) # 45  5
 
-table(train$Species)
 # 단계2. 분류모델 생성 
 # rpart(y변수 ~ x변수, data)
 model = rpart(Species~., data=train) # iris의 꽃의 종류(Species) 분류 
 model
 
-# 분류모델 시각화 - rpart.plot 패키지 제공 
+# 분류모델 시각화 방법1 - rpart.plot 패키지 제공 
 prp(model)  
 
-# 분류결과 상세 시각화 
+# # 분류모델 시각화 방법2 - 분류결과 상세 시각화 
 plot(model) # 트리 프레임 보임
 text(model, use.n=T) # 텍스트 추가
 post(model, file="") # 타원제공 - rpart 패키지 제공 
