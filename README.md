@@ -1,3 +1,3 @@
 # R
 
-[dkd](TIL/R/function.md)
+[dkd](https://github.com/jk-jang/TIL/R/function.md)
