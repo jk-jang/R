@@ -32,4 +32,15 @@ file![img](http://cfile26.uf.tistory.com/image/2635E73456F784B70D8D04)
 
 
 
+
+
+```python
+a = d
+a + g -3 =g
+```
+
+dkfjdkdl
+
+
+
 second option![img](Shiny/testimg/img.JPG)
