@@ -15,3 +15,21 @@ raw![img](https://github.com/jk-jang/R/raw/master/Shiny/testimg/img.JPG)
 
 
 master![img.JPG](https://github.com/jk-jang/R/blob/master/Shiny/testimg/img.JPG?raw=true)
+
+
+
+
+
+
+
+fir option![img](Shiny/testimg/img.JPG)
+
+
+
+
+
+file![img](http://cfile26.uf.tistory.com/image/2635E73456F784B70D8D04)
+
+
+
+second option![img](Shiny/testimg/img.JPG)
